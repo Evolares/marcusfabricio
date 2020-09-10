@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Marcus Fabricio" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Portfólio Marcus Fabricio - Gradiente Descendente</title>
+    <!-- BOOTSTRAP CORE CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- IONICON STYLE SHEET FOR BEAUTIFUL ICONS -->
+    <link href="../assets/css/ionicons.css" rel="stylesheet" />
+    <!-- STYLE FOR OPENING IMAGE IN POPUP USING FANCYBOX-->
+    <link href="../assets/js/source/jquery.fancybox.css" rel="stylesheet" />
+    <!-- CUSTOM CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div class="navbar navbar-default navbar-fixed-top scroll-me">
+        <!-- pass scroll-me class above a tags to starts scrolling -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="../index.html">HOME</a></li>
+						<li><a href="#contact">MARCUS FABRICIO</a></li>
+						<li><a href="#contact">(61) 98152-7500</a></li>
+						
+					</ul>
+				</div>				
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header">RESUMO</a></li>
+                    <li><a href="#services">DETALHE</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- NAVBAR END  -->
+    <div id="header">
+        <div class="overlay">
+            <div class="container">
+                <div class="row scroll-me">
+                    <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 text-center ">
+                        <h1 data-scroll-reveal="enter from the bottom after 0.3s">GRADIENTE DESCENDENTE
+                        </h1>
+                        <h3 data-scroll-reveal="enter from the bottom after 0.5s"> Gradiente Descendente é um algoritmo de otimização muito genérico capaz de encontrar ótimas soluções para uma ampla gama de problemas.
+                        </h3>					  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--HEADER SECTION END  -->
+    <section id="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <h2><strong>UM POUCO DE TEORIA</strong></h2>
+						O propósito geral é ajustar iterativamente os parâmetros para minimizar uma função de custo
+						Vamos supor que voce esteja perdido nas montanhas em um denso nevoeiro; você consegue sentir a inclinação do solo sob seus pés. E voce quer chegar ao fundo do vale, a melhor estratégia é descer em direção à enconsta mais íngrime.
+						É exatamente isso que o Gradiente Descendente faz. Medindo o gradiente local da função de erro em relação ao vetor do parametro
+						Quando o gradiente for zero, indica que voce chegou ao fundo do vale.
+						Na prática, começa-se com iniciações aleatórias, em seguida vão dando passos pra diminuir a função de custo (Que pode ser MSE) até que o algoritimo conveja para o mínimo.
+						O tamanho dos passos é definido pelo hiperparametro Taxa de Aprendizado. Mas, se a Taxa de Aprendizado for baixa, o algoritmo irá demorar muito pra chegar ao fundo do vale Se for muito alto, poderá alcançar o outro lado da encosta, sem passar pelo fundo do vale.						
+					</div>
+                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <h2><strong>RESUMO</strong></h2>
+						Como se saber se, de fato, estou no fundo do vale (minimo global) ou apenas no baixadinha (minimo local) ? Pra nossa sorte, a função de custo MSE para um modelo de regressão linear, é uma função convexa, ou seja a função gradiente irá buscar o fundo do vale.
+                </div>				
+            </div>
+			
+			
+			<div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.1s">
+				<div class="row text-center">
+					<h2><strong>VAMOS À PRÁTICA</strong></h2>
+				</div>	
+			</div>
+			<div class="row text-center">
+				<iframe src="GradienteDescendente.html" width="853" height="680"></iframe>
+			</div>
+        </div>
+    </section>
+	
+    <footer>
+        &copy 2020 MARCUS FABRICIO FERREIRA PAULA | <a href="http://www.designbootstrap.com/" target="_blank">by Marcus Fabricio</a>
+    </footer>
+    <!--FOOTER SECTION END  -->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  SCRIPTS -->
+    <script src="../assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="../assets/js/bootstrap.js"></script>
+    <!-- SCROLLING SCRIPTS PLUGIN  -->
+    <script src="../assets/js/jquery.easing.min.js"></script>
+    <!--  FANCYBOX PLUGIN -->
+    <script src="../assets/js/source/jquery.fancybox.js"></script>
+    <!-- ISOTOPE SCRIPTS -->
+    <script src="../assets/js/jquery.isotope.js"></script>
+     <!-- SCROLL ANIMATIONS  -->
+    <script src="../assets/js/scrollReveal.js"></script>
+    <!-- CUSTOM SCRIPTS   -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+</html>
